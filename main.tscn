@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbis17dxnloog"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_u6yxr"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_u6yxr")
+
+[node name="Play" type="Button" parent="."]
+offset_left = 429.0
+offset_top = 205.0
+offset_right = 676.0
+offset_bottom = 283.0
+text = "Start"
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 432.0
+offset_top = 380.0
+offset_right = 680.0
+offset_bottom = 460.0
+text = "Quit
+"
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
